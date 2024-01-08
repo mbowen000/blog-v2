@@ -57,3 +57,19 @@ Mike
 
 * Ok, I've got Astro installed, stripped minimal boilerplate, and now its got my first blog post in it.
 * Let's get logged into (and dust off) my webserver.
+
+## Update 9:58 AM - We're Live!
+
+* Succesfully logged into my VM on digital ocean
+* Pushed everything to git
+* Pulled the repo to my local webserver
+* Did some googling to remember where my Apache2 configurations are stored, and modified the virtual host config
+* Restarted Apache
+* Now we're live!
+
+So lets go onward to better things.
+
+* Update server to not be on Ubuntu 12.04. This will involve re-deploying mikescottbowen.com and plainfieldsignsinc.com (my parents business website)
+* Make sure we have a CI pipeline that is easy to use, ideally pushing to git will just auto pull changes and run builds on the server
+* Update the blog to look more "me"
+* Keep writing content!
