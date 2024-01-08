@@ -69,6 +69,7 @@ Mike
 
 So lets go onward to better things.
 
+* Get SSH enabled so it doesn't say "not secure" on this website that I last used in 2014!!
 * Update server to not be on Ubuntu 12.04. This will involve re-deploying mikescottbowen.com and plainfieldsignsinc.com (my parents business website)
 * Make sure we have a CI pipeline that is easy to use, ideally pushing to git will just auto pull changes and run builds on the server
 * Update the blog to look more "me"
