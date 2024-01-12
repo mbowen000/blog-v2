@@ -1,0 +1,105 @@
+<!DOCTYPE html><html lang="en"> <head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v4.1.1"><!-- Font preloads --><link rel="preload" href="/fonts/atkinson-regular.woff" as="font" type="font/woff" crossorigin><link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin><!-- Canonical URL --><link rel="canonical" href="https://example.com/blog/a-signshop-website/"><!-- Primary Meta Tags --><title>A Signshop Website</title><meta name="title" content="A Signshop Website"><meta name="description" content="Chronicles my adventures with building a website for my parents small business"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://example.com/blog/a-signshop-website/"><meta property="og:title" content="A Signshop Website"><meta property="og:description" content="Chronicles my adventures with building a website for my parents small business"><meta property="og:image" content="https://example.com/blog-placeholder-1.jpg"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://example.com/blog/a-signshop-website/"><meta property="twitter:title" content="A Signshop Website"><meta property="twitter:description" content="Chronicles my adventures with building a website for my parents small business"><meta property="twitter:image" content="https://example.com/blog-placeholder-1.jpg"><link rel="stylesheet" href="/_astro/about.D7Q7Ruld.css" />
+<link rel="stylesheet" href="/_astro/about.plUcpub0.css" />
+<style>.hero-image{width:100%}.hero-image img{display:block;margin:0 auto;border-radius:12px;box-shadow:var(--box-shadow)}.title{margin-bottom:1em;padding:1em 0;text-align:left;line-height:1}.title h1{margin:0 0 .5em}.date{margin-bottom:.5em;color:rgb(var(--gray))}.last-updated-on{font-style:italic}ul{list-style:disc}ul li{list-style-type:disc}h1,h2,h3,h4,h5{margin-bottom:1rem}h1{font-size:2rem;margin-bottom:1em;font-style:oblique 3deg}ul{list-style:disc;list-style-position:inside;margin-bottom:1em}
+</style></head> <body> <header data-astro-cid-3ef6ksr2> <nav data-astro-cid-3ef6ksr2> <h2 data-astro-cid-3ef6ksr2><a href="/" data-astro-cid-3ef6ksr2>Mike Bowen</a></h2> <div class="internal-links" data-astro-cid-3ef6ksr2> <a href="/" data-astro-cid-3ef6ksr2 data-astro-cid-eimmu3lg> Posts </a>  <!-- <HeaderLink href="/blog">Blog</HeaderLink> --> <a href="/about" data-astro-cid-3ef6ksr2 data-astro-cid-eimmu3lg> About </a>  </div> </nav> </header>  <main class="px-4 md:px-6 mx-auto w-full max-w-[875px]"> <article> <!-- <div class="hero-image">
+					{heroImage && <img width={1020} height={510} src={heroImage} alt="" />}
+				</div> --> <div class="prose"> <div class="title"> <div class="date text-sm"> <time datetime="2024-01-08T07:00:00.000Z"> Jan 8, 2024 </time>  </div> <h1 class="text-4xl font-extrabold text-gray-600">A Signshop Website</h1> <hr> </div>  <h1 id="intro">Intro</h1>
+<p>Over the years, I’ve always been seen as the “tech guru” around my family. Making websites became a passion when I picked up a PHP web development book
+from Barnes and Noble in 8th grade, and when my parents sign shop needed a website, I was happy to take on the job. What resulted was a great exploration into writing my own CMS, frontend for displaying images in a lightbox, and a navigation structure that was very early 2000s.</p>
+<p>This site is still hosted on the same server as this blog, at <a href="http://plainfieldsigns.net">plainfieldsigns.net</a>. I designed the (very dated) template, and built a PHP backend for the site using codeignitor that allows my parents to upload content. So basically I wrote my own mini “CMS” for photo uploads. Here’s a screenshot:</p>
+<p><img src="/plainfieldsigns-old.jpg" alt="A signshop website"></p>
+<p>Looking at this 15 years later is painful and we’re in a different place with technology:</p>
+<ul>
+<li>This homegrown CMS “app” for photo uploads is terrible.</li>
+<li>I used JQuery and lightbox code to display the images.</li>
+<li>The taxonomy and navigation is hardcoded</li>
+<li>I don’t think my parents have uploaded any content in 10+ years.</li>
+</ul>
+<p>(Todo in the future: Do a breakdown / analysis of this existing software and explore how I built it and what I could have done better as a young grasshopper!)</p>
+<p>It’s time to do this the modern way and make this useful again. Hopefully a thing that I can do that will connect my parents and I even though we live ~1000 mi apart. (And not annoy them or me in the process) 😊</p>
+<h2 id="new-and-improved">New And Improved</h2>
+<p>The goal should be to make a refreshed design for this site that allows easy content manipulation, shows basic contact information.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Powered by a CMS (Headless for fun) - Posts should just be sign images with optional text content. (Could be fun for mom and dad to write some details about the job or the process of making the sign)</li>
+<li>Static content should be easily hosted</li>
+<li>Template could be : <a href="https://astro-strata.vercel.app/">https://astro-strata.vercel.app/</a></li>
+<li>CMS Could be Sanity / but should consider others that are even easier. <a href="https://www.sanity.io/guides/sanity-astro-blog">https://www.sanity.io/guides/sanity-astro-blog</a></li>
+</ul>
+<p><strong>Next steps:</strong></p>
+<ul>
+<li>Outline the structure ✅</li>
+<li>list changes that are needed to the chosen template ✅</li>
+<li>POC and hook up CMS with Astro ✅</li>
+<li>Verify that its a) easy to use b) easy to maintain and deploy ✅</li>
+<li>Build the thing and port some content locally ✅</li>
+<li>Deploy it! ✅</li>
+<li>Show my folks how to use the thing to add content</li>
+</ul>
+<h2 id="update-1122024">Update 1/12/2024</h2>
+<p>I’ve made some progress. After getting some input from Mom, I decided to build my own template from scratch using Tailwind CSS components. The design is still mostly boilerplate tailwind but we’ll spruce that up soon. As of now, I would consider the POC complete that demonstrates:</p>
+<ul>
+<li>Content can be managed in Sanity Studio by my Mom and Dad. I have that running on Sanity production.</li>
+<li>The Frontend application is deployed to a free app service on Digital Ocean, my typical hosting platform. The bonus here is that I can move these static apps to free tier apps and then sunset my droplet / VM and save like $10 per month!</li>
+<li>Deploying content on Sanity publishes a webhook that automatically rebuilds the frontend app, updating the content from Sanity (any new sign photos will be pushed). <strong>This could potentially be a separate blog article on how to set up.</strong></li>
+</ul>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0"><code><span class="line"><span>&#x3C;script>Script Source&#x3C;/script></span></span></code></pre>
+<p>Here’s a screenshot of what it looks like now (notice the photos I used are just random family photo uploads):</p>
+<p><img src="/plainfieldsigns-new-draft.jpg" alt="Plainfield Signs New Site"></p>
+<h2 id="summary-and-other-challenges">Summary and other challenges</h2>
+<p>I have learned some things about static sites, Astro, headless CMS and other new technologies by getting hands on here. It’s been tricky to wrap my head around the limitations of using a static site. For example, with a static site I have to rebuild the site in order for new content published in the CMS to appear.</p>
+<p>Another challenge is dynamic behavior. I would like to have a contact form on the site that sends an email (via a service like sendgrid) to my parents gmail address. However, as a static site hosted without a backend, this is proving difficult. I am able to create a serverless function with Digital Ocean, however I cannot find a way to authenticate to that service from the static site. I do not want to expose a function that sends emails to my parents without some kind of security / obfuscation, as I planned on having a captcha on the form, but leaving the function exposed to the internet generally would be a no-go.</p>
+<p>This has really turned into a “serverless” adventure and it’s pushed me to learn and and utilize a new set of technology and tools. Its definitely a mind-shift to think about accomplishing things without a full webserver backed “app”.</p>
+<p><strong>Next Steps</strong></p>
+<ul>
+<li>Finalize the template
+<ul>
+<li>Finalize the design of the main content - hopefully make it look a little more bespoke and not so templated.</li>
+</ul>
+</li>
+<li>Port over existing content
+<ul>
+<li>Determine if there are ways to bulk create posts in Sanity for each of the existing images (there has to be!)</li>
+</ul>
+</li>
+<li>Get some new photos taken for the main splash and featured gallery images.</li>
+<li>Implement the contact form - potentially just using some 3rd party integration that uses iframe or something.</li>
+<li>Add other basic pages</li>
+<li>Switch over the DNS to the new site</li>
+<li>(From Above) - Train the users (mom and dad).</li>
+</ul>  </div> </article> </main> <footer data-astro-cid-sz7xmlte>
+&copy; 2024 Mike Bowen. All rights reserved.
+<!-- <div class="social-links">
+		<a href="https://m.webtoo.ls/@astro" target="_blank">
+			<span class="sr-only">Follow Astro on Mastodon</span>
+			<svg
+				viewBox="0 0 16 16"
+				aria-hidden="true"
+				width="32"
+				height="32"
+				astro-icon="social/mastodon"
+				><path
+					fill="currentColor"
+					d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.32-4.339.32-4.339 0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027 0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a3.614 3.614 0 0 1-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804 0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727 0-1.091.436-1.091 1.296v4.079H3.197V5.522c0-.859.22-1.541.66-2.046.456-.505 1.052-.764 1.793-.764.856 0 1.504.328 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74 0 1.336.259 1.791.764.442.505.661 1.187.661 2.046v4.203z"
+				></path></svg
+			>
+		</a>
+		<a href="https://twitter.com/astrodotbuild" target="_blank">
+			<span class="sr-only">Follow Astro on Twitter</span>
+			<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/twitter"
+				><path
+					fill="currentColor"
+					d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+				></path></svg
+			>
+		</a>
+		<a href="https://github.com/withastro/astro" target="_blank">
+			<span class="sr-only">Go to Astro's GitHub repo</span>
+			<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/github"
+				><path
+					fill="currentColor"
+					d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+				></path></svg
+			>
+		</a>
+	</div> --> </footer>  </body></html>
