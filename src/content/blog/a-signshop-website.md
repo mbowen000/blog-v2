@@ -1,13 +1,12 @@
 ---
-title: 'A signshop website'
+title: 'A Signshop Website'
 description: 'Chronicles my adventures with building a website for my parents small business'
 pubDate: 'Jan 08 2024'
 heroImage: '/blog-placeholder-3.jpg'
 ---
 
-## Simple is always better - Building a Small Business Website
+# Intro
 
-### Intro
 Over the years, I've always been seen as the "tech guru" around my family. Making websites became a passion when I picked up a PHP web development book
 from Barnes and Noble in 8th grade, and when my parents sign shop needed a website, I was happy to take on the job. What resulted was a great exploration into writing my own CMS, frontend for displaying images in a lightbox, and a navigation structure that was very early 2000s.
 
@@ -49,7 +48,7 @@ The goal should be to make a refreshed design for this site that allows easy con
 * Show my folks how to use the thing to add content
 
 
-### Update 1/12/2024
+## Update 1/12/2024
 
 I've made some progress. After getting some input from Mom, I decided to build my own template from scratch using Tailwind CSS components. The design is still mostly boilerplate tailwind but we'll spruce that up soon. As of now, I would consider the POC complete that demonstrates:
 
@@ -65,7 +64,7 @@ Here's a screenshot of what it looks like now (notice the photos I used are just
 
 ![Plainfield Signs New Site](/plainfieldsigns-new-draft.jpg)
 
-### Summary and other challenges
+## Summary and other challenges
 
 I have learned some things about static sites, Astro, headless CMS and other new technologies by getting hands on here. It's been tricky to wrap my head around the limitations of using a static site. For example, with a static site I have to rebuild the site in order for new content published in the CMS to appear. 
 
